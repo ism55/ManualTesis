@@ -60,6 +60,198 @@
 <!-- CONTENT -->
 
 
+<section class="content-section" id="portfolio">
+
+<div class="container">
+  <div class="content-section-heading text-center">
+
+        <h2 class="mb-5">Uso de Robocom Web</h2>
+      </div>
+
+
+    <div class="col-lg-11 mx-auto">
+      <p class="lead mb-5">
+
+        La página web es compatible con Google Chrome 78.0.3904.97, Mozilla Firefox 70.0, Opera 64.0.3417.61</br></br>
+
+
+      Para acceder a ella, debe utilizarse cualquier dispositivo (computador o celular) que cuente con tecnología Wi-Fi y un navegador web. </br>
+
+      El procedimiento para conexión debe ser el siguiente:</br></br>
+
+      1- Encender el módulo ESP8266.</br>
+      2- Encender el brazo robot.</br>
+      3- Desconectarse de cualquier otra red (móvil, ethernet, WiFi) ya que no podrá utilizar la página web si posee otra conexión.
+      4-Establecer la conexión a través de un dispositivo compatible. Como se indica a continuación, desde un computador con Windows 10:
+
+         <div class="row no-gutters">
+       
+          <a class="" href="./img/redesdisp.jpg">
+         
+            <img style="padding-left:10em" class="img-fluid" src="./img/redesdisp.jpg" alt="">
+          </a>
+        
+    </div>
+
+      </br>5- Ingresar usando SSID: "ESP8266-WiFi" y contraseña WPA/WPA2 PSK: "esp123456".</br>
+      6- Desde el navegador, escribir la dirección "192.168.4.1:8266". Si la dirección es correcta, se encenderá un LED desde el módulo de acceso remoto que se apagará cuando la página cargue completamente.</br>
+      7- Ingresar la contraseña que solicita al cargar la página:</br></br>
+
+
+
+         <div class="row no-gutters">
+       
+          <a class="" href="./img/ingreseclave.jpg">
+         
+            <img style="padding-left:10em" class="img-fluid" src="./img/ingreseclave.jpg" alt="">
+          </a>
+        
+    </div>
+
+      </br>7.1- Mensaje de contraseña incorrecta:</br>
+ <div class="row no-gutters">
+       
+          <a class="" href="./img/claveincorrecta.jpg">
+         
+            <img style="padding-left:10em" class="img-fluid" src="./img/claveincorrecta.jpg" alt="">
+          </a>
+        
+    </div>
+
+    </br>7.2- Mensaje de contraseña correcta:</br>
+
+    
+       <div class="row no-gutters">
+       
+          <a class="" href="./img/claveexitosa.jpg">
+         
+            <img style="padding-left:10em" class="img-fluid" src="./img/claveexitosa.jpg" alt="">
+          </a>
+        
+    </div>
+    </br></br>
+        
+      </p>
+    </div>
+
+  <div class="content-section-heading text-center">
+
+        <h3 class="text-secondary mb-5">Secciones de la página web</h3>
+         <h3 class="mb-5">Cabecera</h3>
+  </div>
+
+    <div class="col-lg-11 mx-auto">
+      <p class="lead mb-5">
+        </br>Esta seccion describe la información general de la página web. Además, incluye un botón "Recargar página" que sirve para volver a la posición por defecto del brazo robot.</br>
+    
+        <div class="row no-gutters">
+           
+              <a class="" href="./img/paginaheader.png">
+             
+                <img  class="img-fluid" src="./img/paginaheader.png" alt="">
+              </a>
+            
+        </div>
+  <div class="content-section-heading text-center">
+
+        <h3 class="text-secondary mb-5">Secciones de la página web</h3>
+         <h3 class="mb-5">Probador</h3>
+  </div>
+
+    <div class="col-lg-11 mx-auto">
+      <p class="lead mb-5">
+
+
+        </br>Esta sección sirve para probar algunas trayectorias sin retardo.</br>
+         </br> En el campo de texto el usuario debe escribir cada línea de comando de acuerdo a la siguiente estructura:</br></br>
+
+
+       qi[ESPACIO]AAA.BB</br>
+       [ENTER]</br>
+       qi[ESPACIO]AAA.BB</br></br>
+      
+
+      En donde:</br>
+
+       i: 0,1,2,3,4,5,6 representa a cada uno de los motores del brazo manipulador, siendo los motores A, B, C, D, E, F respectivamente.</br></br>
+      AAA: Indica la cantidad de dígitos máxima que pueden escribirse para la parte entera del valor, el cuál debe escribirse en grados.</br>
+      BB: Indica la cantidad de dígitos máxima que debe tener siempre la mantisa. Esto es, si se trata de un número entero, debe escribirse AAA.00.</br>
+
+
+    Al culminar de escribir los comandos deseados, debe presionar el botón "Pulsar" para que el robot comience el movimiento.</br></br>
+
+
+        
+    
+        <div class="row no-gutters">
+           
+              <a class="" href="./img/paginaprobador.png">
+             
+                <img  class="img-fluid" src="./img/paginaprobador.png" alt="" height="300" width="500">
+              </a>
+            
+        </div>
+    NOTA: Se recomienda no usar una gran cantidad de comandos en el probador ya que podrán apreciarse las últimas instrucciones y no de la forma que desea el usuario. Es decir, estructuradamente.
+      </p>
+    </div>
+
+  <div class="content-section-heading text-center">
+
+        <h3 class="text-secondary mb-5">Secciones de la página web</h3>
+         <h3 class="mb-5">Movimiento en tiempo real</h3>
+  </div>
+    <div class="col-lg-11 mx-auto">
+      <p class="lead mb-5">
+        
+        </br>En esta sección el usuario puede realizar los movimientos del brazo robot en tiempo real a través de las barras deslizadoras y botones. Para ello se tiene como guía la imagen mostrada en la sección anterior.</br>
+    
+        <div class="row no-gutters">
+           
+              <a class="" href="./img/paginamov.png">
+             
+                <img  class="img-fluid" src="./img/paginamov.png" alt="">
+              </a>
+            
+        </div>
+
+      </p>
+
+  <div class="content-section-heading text-center">
+
+        <h3 class="text-secondary mb-5">Secciones de la página web</h3>
+         <h3 class="mb-5">Configuración de parámetros</h3>
+  </div>
+
+    <div class="col-lg-11 mx-auto">
+      <p class="lead mb-5">
+        
+    
+        <div class="row no-gutters">
+           
+              <a class="" href="./img/paginaconfig.png">
+             
+                <img  class="img-fluid" src="./img/paginaconfig.png" alt="">
+              </a>
+            
+        </div>
+
+      </p>
+    </div>
+
+      
+    </div>
+
+    </div>
+
+
+
+</div>
+</section>
+
+<!-- CONTENT -->
+
+
+
  <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
