@@ -15,7 +15,7 @@
   <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="./vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="./vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
@@ -61,6 +61,105 @@
 
 
 
+<section class="content-section" id="portfolio">
+
+<div class="container">
+      <div class="content-section-heading text-center">
+
+        <h2 class="mb-5">Solución de posibles inconvenientes</h2>
+      </div>
+
+
+  <div class="col-lg-11 mx-auto">
+      <p class="lead mb-5">
+        
+     
+
+
+     </br>La aplicación web contenida en la página está desarrollada en JavaScript. Concretamente, con herramientas de JS y de JQuery.</br>
+
+      </br>Cada navegador o browser actualizado cuenta con JavaScript. Además, cualquiera que ejecute una página web que utilice JQuery automáticamente descarga esta librería (jquery.min.js), permitiendo que pueda cargarse con mayor rapidez en la siguiente ocasión. No obstante, algunas veces esto no se guarda en la memoria por diversos motivos.</br>
+
+      </br>Dentro del código HTML, se hace la solicitud de:</br>
+
+
+      </br>"https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"</br>
+
+
+      </br>Para que el browser integre esta librería debe estar previamente descargada, de lo contrario ocasionará problemas en la página y no se ejecutará correctamente. </br>
+
+      </br>Un método para solucionar esta eventualidad es introducir el enlace anterior en el navegador a utilizar con conectividad a internet, previo a la conexión con el ESP8266. El parámetro '/1/' de la cadena solicita la versión más actual disponible.</br>
+
+      </br>En algunos casos, esto no soluciona el problema de conexión; por lo que es necesario ajustar parámetros internos del navegador.</br>
+
+      </br>Si se está utilizando Google Chrome (probado con versión 76.0.3809.132) u Opera (probado con versión 63.0.3368.94) se puede acceder a la memoria caché de DNS, y así ajustar el valor por defecto. Esto se hace accediendo a la dirección:</br>
+
+
+      </br>"chrome://net-internals/#dns"</br>
+
+
+    <div class="row no-gutters">
+       
+          <a class="" href="./img/problemapagina.jpg">
+         
+            <img " class="img-fluid" src="./img/problemapagina.jpg" alt="">
+          </a>
+        
+    </div>
+
+
+      </br>En la ventana mostrada en la figura anterior, se debe presionar el botón 'Clear host cache'.</br>
+
+      </br>Si el problema de conectividad persiste, es necesario eliminar los valores de cookies, caché y demás datos de navegación y repetir lo explicado al inicio de esta sección (descargar nuevamente la librería jquery.min.js).</br></br></br>
+
+
+      
+      </p>
+
+
+      <div class="content-section-heading text-center">
+
+        <h3 class="mb-5">¿Cómo saber que es un error de JQuery?</h3>
+     </div>
+       <p class="lead mb-5"
+      </br></br> Si al acceder al navegador el usuario puede visualizar el mensaje para ingresar la clave, es un indicio de que el motor Javascript se está ejecutando sin problema. No obstante, si al utilizar las barras deslizadoras de la sección de movimiento en tiempo real estas no presentan ningún cambio y no generan ningún movimiento, es un indicador de que el motor de jQuery no fue cargado correctamente. Para solucionar esto, debe implementar las opciones previamente explicadas o cambiar de navegador. Desde un celular, se recomienda utilizar Mozilla Firefox, ya que presenta más estabilidad para la descarga de jQuery.</br></br></br>
+
+      </p>
+
+      <div class="content-section-heading text-center">
+
+        <h3 class="mb-5">¿El problema no está descrito en las secciones anteriores?</h3>
+      </div>
+     <p class="lead mb-5"
+      </br></br> Si el usuario comprueba que todo está configurado correctamente pero presenta dificultades de conectividad puede deberse a:</br></br>
+
+      </br>1- El dispositivo ESP8266 se encuentra saturado y no emite la señal WiFi.</br>
+      </br>2- El dispositivo ESP8266 no fue acoplado correctamente al brazo robot.</br>
+
+
+      </br></br></br>
+
+      En cuanto al caso 1: </br></br>Puede deberse a que el dispositivo fue reiniciado varias veces estando activo el puerto serial, lo que ocasiona un comportamiento no deseado en el microcontrolador e impide emitir la señal WiFi. Para solucionar esto, es necesario desacoplar ambos microcontroladores y reiniciar ambas conexiones. Una vez hecho esto, el problema quedará solventado.</br>
+
+      </br>Respecto al caso 2: </br></br>Esto suele ocurrir cuando el dispositivo ESP8266 se enciende luego de conectar el brazo robot, ocasionando que no exista un acople en la transmisión serial de parte del microcontrolador dsPIC30F3011. Para solucionar esto, se recomienda encender primero el módulo ESP8266, esperar la señal WiFi y seguidamente encender el brazo robot.</br>
+
+      </p>
+  </div>
+
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTENT -->
+
+
  <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -91,14 +190,14 @@
   </a>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+  <script src="./js/stylish-portfolio.min.js"></script>
 
 
 </body>
